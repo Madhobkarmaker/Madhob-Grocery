@@ -1,0 +1,386 @@
+@charset "UTF-8";
+
+/* *************************************************************************************** */
+/* import font family */
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+img,
+div,
+figure,
+section,
+table,
+tbody,
+thead,
+label {
+  margin: 0;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
+body.BackDropOpenPreventScroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+code {
+  font-family: "Work Sans", sans-serif;
+}
+
+/* input prevent arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* *************************************************************************************** */
+
+/* font size */
+
+.fs-30 {
+  font-size: 30px;
+}
+.fs-24 {
+  font-size: 24px;
+}
+.fs-20 {
+  font-size: 20px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.fs-10 {
+  font-size: 10px;
+}
+.fs-8 {
+  font-size: 8px;
+}
+
+/* *************************************************************************************** */
+/* line e height */
+
+/* *************************************************************************************** */
+/* letter spacing */
+.l-spacing-2 {
+  letter-spacing: 0.2px !important;
+}
+
+/* *************************************************************************************** */
+/* font weights */
+
+.fw-300 {
+  font-weight: 300 !important;
+}
+.fw-400 {
+  font-weight: 400 !important;
+}
+.fw-500 {
+  font-weight: 500 !important;
+}
+.fw-600 {
+  font-weight: 600 !important;
+}
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+/* *************************************************************************************** */
+/* container row col */
+
+.custom-container {
+  max-width: 1330px;
+}
+
+@media (max-width: 991px) {
+  .custom-container {
+    width: 100%;
+  }
+}
+
+.text-overflow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* *************************************************************************************** */
+/* buttons */
+
+.button-default {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #0870ff;
+  font-weight: 500;
+  outline-style: none;
+  border: 1px solid #0870ff;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.button-default:hover {
+  background: #0870ff;
+  color: #ffffff;
+}
+
+.button-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #edf3fd;
+  color: #0870ff;
+  outline-style: none;
+  border: 1px solid #0870ff;
+  font-size: 16px;
+  padding: 12px 24px;
+  font-weight: 500;
+  border-radius: 8px;
+}
+.button-secondary2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0870ff;
+  color: #ffffff;
+  font-weight: 500;
+  outline-style: none;
+  border-style: none;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+/* *************************************************************************************** */
+
+/* text colors */
+
+.bgPrimary-1 {
+  background: #0870ff;
+}
+
+.bgPrimary-2 {
+  background: #80b4ff;
+}
+
+.bgPrimary-3 {
+  background: #edf3fd;
+}
+
+.bgSecondary-1 {
+  background: #f72585;
+}
+
+.bgSecondary-2 {
+  background: #ff76b5;
+}
+
+.bgSecondary-3 {
+  background: #ffe8f3;
+}
+
+.bgWarning-1 {
+  background: #ff0000;
+}
+
+.bgWarning-2 {
+  background: #ffa585;
+}
+
+.bgWarning-3 {
+  background: #fff0eb;
+}
+.bg-white {
+  background: #ffffff;
+}
+.bg-transparent {
+  background: transparent;
+}
+
+/* *************************************************************************************** */
+
+/* text colors */
+
+.cPrimary-1 {
+  color: #0870ff;
+}
+
+.cPrimary-2 {
+  color: #80b4ff;
+}
+
+.cPrimary-3 {
+  color: #edf3fd;
+}
+
+.cSecondary-1 {
+  color: #f72585;
+}
+
+.cSecondary-2 {
+  color: #ff76b5;
+}
+
+.cSecondary-3 {
+  color: #ffe8f3;
+}
+
+.cWarning-1 {
+  color: #ff0000;
+}
+
+.cWarning-2 {
+  color: #ffa585;
+}
+
+.cWarning-3 {
+  color: #fff0eb;
+}
+
+.cBlack-1 {
+  color: #000000;
+}
+
+.cBlack-2 {
+  color: #1f1f1f;
+}
+
+.cBlack-3 {
+  color: #333333;
+}
+
+.cBlack-4 {
+  color: #474747;
+}
+.cBlack-5 {
+  color: #555555;
+}
+.cBlack-6 {
+  color: #858585;
+}
+.cBlack-7 {
+  color: #adadad;
+}
+.cBlack-8 {
+  color: #d6d6d6;
+}
+.cBlack-9 {
+  color: #f5f5f5;
+}
+.cBlack-10 {
+  color: #081f32;
+}
+cBlack-11 {
+  color: #b3b3b3;
+}
+
+/* *************************************************************************************** */
+
+.link {
+  text-decoration: none;
+}
+
+.a:hover {
+  cursor: pointer;
+}
+
+.p:hover {
+  color: #0870ff;
+}
+
+.list-style-none {
+  list-style: none;
+}
+.list-style-none > li {
+  display: block;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.bg-none {
+  background-color: transparent !important;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+.no-select {
+  user-select: none;
+}
