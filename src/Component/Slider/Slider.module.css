@@ -1,0 +1,23 @@
+
+.sliderImage{
+    height: 440px;
+}
+.productTotal {
+    border-radius: 100px;
+    border-style: none;   
+}
+
+@media screen and (max-width: 992px) {
+    .sliderImage{
+        height: 330px;
+        width: 100%;
+    }
+    .title1{
+        font-size: 12px;
+    }
+    .title2{
+        font-size: 16px;
+    }
+    
+  }
+

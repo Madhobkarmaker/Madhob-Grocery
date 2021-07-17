@@ -3,7 +3,9 @@ import Button from "./Component/Button/Button";
 import Checkbox from "./Component/Checkbox/Checkbox";
 import FooterPage from "./Component/FooterPage/FooterPage";
 import My_cart from "./Component/My_cart/My_cart";
+import Order from "./Component/Order/Order";
 import Radio from "./Component/Radio/Radio";
+import Slider from "./Component/Slider/Slider";
 import Toggle from "./Component/Toggle/Toggle";
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
       <FooterPage />
       <My_cart />
       <Account />
+      <Slider />
+      <Order />
     </div>
   );
 }
